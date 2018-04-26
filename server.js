@@ -21,7 +21,16 @@ function log( req, res, next ) {
 
 const httpServer = http.createServer()
 server.on("request", (request, response) => {
-  // the same kind of magic happens here!
+	// the same kind of magic happens here!
+	request.method
+	request.url
+	request.headers
+	const userAgent = headers['user-agent'];
+
+	response.statusCode = 404; // Tell the client that the resource wasn't found.
+	response.setHeader('Content-Type', 'application/json');
+	response.setHeader('X-Powered-By', 'bacon');
+
 })
 
 const options = {
