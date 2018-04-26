@@ -1,0 +1,20 @@
+{
+  "name": "econ-server",
+  "version": "1.0.0",
+  "description": "u no i had to serv it to em",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbjw/econ-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbjw/econ-server/issues"
+  },
+  "homepage": "https://github.com/jbjw/econ-server#readme"
+}
