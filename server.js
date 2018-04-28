@@ -11,7 +11,7 @@ var express = require('express')
 // const debug = require('debug')('jjd')
 
 const args = process.argv;
-const httpPort = args[args.indexOf("-p") + 1 || args.indexOf("--port") + 1 || -1] || 80;
+const port = args[args.indexOf("-p") + 1 || args.indexOf("--port") + 1 || -1] || 80;
 
 function log( req, res, next ) {
 	req.time = Date.now(); // new Date();
@@ -19,7 +19,7 @@ function log( req, res, next ) {
 	next(); return;
 }
 
-const httpServer = http.createServer()
+const server = http.createServer()
 server.on("request", (request, response) => {
 	// the same kind of magic happens here!
 	request.method
