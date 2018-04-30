@@ -17,6 +17,13 @@ Guide: https://steamcommunity.com/sharedfiles/filedetails/?id=481264606
 ## Config
 - node server.js -p [port]
 
+## Deployment
+I like to use pm2 to keep the server running. Instructions:
+- run `npm install -g pm2`
+- run `pm2 start server.js`
+
+The server will now run in the background and restart automatically (on crash, reboot, etc).
+
 ## API Reference
 - `/` root, instructions
 - `/markets` a list of the markets
