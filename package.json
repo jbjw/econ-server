@@ -4,6 +4,7 @@
   "description": "u no i had to serv it to em",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
