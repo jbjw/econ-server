@@ -11,7 +11,7 @@ fetch("http://localhost:5000/all")
 		return response.json()
 	})
 	.then(function (data) {
-		document.body.textContent = JSON.stringify(data)
+		// document.body.textContent = JSON.stringify(data)
 		// for (var i = 0; i < data.products.length; i++) {
 		// 	myList.appendChild(listItem)
 		// }
