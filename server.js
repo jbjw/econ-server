@@ -79,7 +79,9 @@ const output = economy.markets.map((market) => {
 
 const server = http.createServer()
 server.on("request", (request, response) => {
-	console.dir(request.url)
+
+	console.dir(url.parse(request.url))
+	// console.dir(url.parse(request.url).searchParams)
 
 	// the same kind of magic happens here!
 	// request.method
@@ -106,6 +108,7 @@ server.on("request", (request, response) => {
 	}
 
 	response.setHeader("Content-Type", "application/json")
+	response.setHeader("Access-Control-Allow-Origin", "*")
 
 	// response.writeHead(200, {"Content-Type": "application/json"})
 	// response.write()
