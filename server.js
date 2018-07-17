@@ -69,6 +69,9 @@ xml2js.parseString(xml, function (err, result) {
 				balance: parseInt(client["BankBalance"][0]),
 			}
 		}),
+		order_book: orderBook,
+		ship_sales: shipSale,
+		missions: missions,
 	}
 })
 
@@ -94,10 +97,45 @@ server.on("request", (request, response) => {
 	let content
 	switch (request.url) {
 		case "/":
-			content = "/markets, /all"
+			content = "Hello! Check out /routes"
 			break
-		case "/markets":
-			content = output
+		case "/routes":
+			content = {
+				"/routes": "a list of all the routes",
+				"/markets": "a list of all the markets",
+				"/item": "a list of all the items",
+				"/all": "",
+			}
+			break
+		case "/order_book":
+			content = economy.order_book
+			break
+		case "/ship_sales":
+			content = economy.ship_sales
+			break
+		case "/missions":
+			content = economy.missions
+			break
+		case "/market_names":
+			content = economy.markets.map(market => market.name)
+			break
+		case "/market_data":
+			content = economy.markets
+			break
+		case "/client_names":
+			content = economy.clients.map(client => client.name)
+			break
+		case "/client_data":
+			content = economy.clients
+			break
+		case "/item_data":
+			content = economy
+			break
+		case "/item_names":
+			content = economy
+			break
+		case "/item_types":
+			content = economy
 			break
 		case "/all":
 			content = economy
