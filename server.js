@@ -122,6 +122,9 @@ server.on("request", (request, response) => {
 		case "/market_data":
 			content = economy.markets
 			break
+		case "/market_top10":
+			content = economy.markets[0].items.filter(item => item.buy > 1000)
+			break
 		case "/client_names":
 			content = economy.clients.map(client => client.name)
 			break
