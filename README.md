@@ -2,6 +2,10 @@
 u no i had to serv it to em
 🌌🌠💰⭐️💸🚀💵🌍💲🌟💳🌔✨
 
+
+C:\Users\jbjw\se\torch-server\Instance\Saves\OEN3\Storage\504209260.sbm_Economy.scripts
+
+
 Serves up market prices from the Frontier Economy mod for Space Engineers  
 
 Mod: https://steamcommunity.com/sharedfiles/filedetails/?id=504209260  
