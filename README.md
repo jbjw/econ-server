@@ -1,10 +1,6 @@
 # econ-server
-u no i had to serv it to em
+u no i had to serv it to em  
 🌌🌠💰⭐️💸🚀💵🌍💲🌟💳🌔✨
-
-
-C:\Users\jbjw\se\torch-server\Instance\Saves\OEN3\Storage\504209260.sbm_Economy.scripts
-
 
 Serves up market prices from the Frontier Economy mod for Space Engineers  
 
@@ -32,3 +28,7 @@ The server will now run in the background and restart automatically (on crash, r
 - `/` root, instructions
 - `/markets` a list of the markets
 - `/all` dump of all econ info (temporary, for debugging)
+
+
+## notes for me (ignore this)
+C:\Users\jbjw\se\torch-server\Instance\Saves\OEN3\Storage\504209260.sbm_Economy.scripts
